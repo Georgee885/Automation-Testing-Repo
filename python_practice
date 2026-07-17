@@ -1,1 +1,23 @@
+# Simple Code to reverse a string using slicing
+reverse = input("Enter the String: ") # This will take any string as input
+print(reverse[::-1].lower()) # This will reverse the string, and .lower will lowercase the characters of the string if it has any uppercase characters.
 
+# Simple Code to check if a number is Prime or not.
+# To take input from the user
+#num = int(input("Enter a number: "))
+if num == 0 or num == 1:
+    print(num, "is not a prime number")
+elif num > 1:
+   # check for factors
+   for i in range(2,num):
+       if (num % i) == 0:
+           print(num,"is not a prime number")
+           print(i,"times",num//i,"is",num)
+           break
+   else:
+       print(num,"is a prime number")
+       
+# if input number is less than
+# or equal to 1, it is not prime
+else:
+   print(num,"is not a prime number")
